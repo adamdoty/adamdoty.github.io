@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Cheatsheet</title>
+    <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="./resources/css/html_style.css">
 </head>
 
 <body>
@@ -14,53 +16,139 @@
             <a href="./index.html">Home</a>
             <a href="./projects.html">Projects</a>
         </nav>
-        <h2>Headers</h2>
-        <hr>
-        <h1>This is a h1</h1>
-        <h2>This is a h2</h2>
-        <h3>This is a h3</h3>
-        <h4>This is a h4</h4>
-        <h5>This is a h5</h5>
-        <h6>This is a h6</h6>
     </header>
     <main>
-        <section id="semantic html elements">
-            <h2>These are semantic html elements</h2>
-            <hr>
-            <p>Semantic html elements allow other developers to understand the author's intention easier than just using
-                css class selectors. These elements also assist with accessibility tools like screen readers.</p>
-            <ul>
-                <li>
-                    < main>
-                        < / main>
-                </li>
-                <li>
-                    < nav>
-                        < / nav>
-                </li>
-                <li>
-                    < section>
-                        < / section>
-                </li>
-                <li>
-                    < footer>
-                        < / footer>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Lists</h2>
-            <hr>
-            <ul>
-                <li>unordered list item 1</li>
-                <li>unordered list item 2</li>
-            </ul>
-            <ol>
-                <li>ordered list item 1</li>
-                <li>ordered list item 2</li>
-            </ol>
-        </section>
-    </main>
+        <article>
+            <h2>Headings</h2>
+            <table>
+                <thead>
+
+                    <tr>
+                        <th scope="col" class="table-h2">Tag</th>
+                        <th scope="col" class="table-h2">Name</th>
+                        <th scope="col" class="table-h2">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>heading1</td>
+                        <td>The first and largest heading. Only use 1 time, preferably in &lt;header&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h2&gt;</td>
+                        <td>heading2</td>
+                        <td>The second heading.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h3&gt;</td>
+                        <td>heading3</td>
+                        <td>The third heading.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h4&gt;</td>
+                        <td>heading4</td>
+                        <td>The fourth heading.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h5&gt;</td>
+                        <td>heading5</td>
+                        <td>The fifth heading.</td>
+                    </tr>
+                    <tr>
+                        <td class="bottom-table-row">&lt;h6&gt;</td>
+                        <td class="bottom-table-row">heading6</td>
+                        <td class="bottom-table-row">The sixth heading.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="table-h2">Tips</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-tip">To create a custom heading, use the &lt;span&gt; element and
+                            style
+                            it with a css
+                            class selector.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-tip bottom-table-row">Use the semantic &lt;header&gt; element for
+                            titles and other
+                            headings that go at the top of a page.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-h2">More Information</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-tip bottom-table-row"><a
+                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">MDN's
+                                Heading Elements Documentation</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+        <article>
+            <h2>Semantic HTML</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col" class="table-h2">Tag</th>
+                        <th scope="col" class="table-h2">Name</th>
+                        <th scope="col" class="table-h2">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>header</td>
+                        <td>Contains the heading title tag and other heading tags at the start of a web page.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>main</td>
+                        <td>Used within html &lt;body&gt; element. Indicates the main content of the webpage.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>navigation</td>
+                        <td>Holds links to other web pages. Often used within the semantic &lt;header&gt; element.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td>section</td>
+                        <td>Similar to &lt;div&gt;, used for indicating a group of content.</td>
+                    </tr>
+                    <tr>
+                        <td class="bottom-table-row">&lt;footer&gt;</td>
+                        <td class="bottom-table-row">footer</td>
+                        <td class="bottom-table-row">Contains links, address, copyright, contact information and other
+                            details at the bottom of a page.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="table-h2">Tips</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-tip">Semantic html elements allow other developers to understand
+                            the author's intention easier than just using
+                            css class selectors. </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-tip bottom-table-row">These elements also assist with accessibility
+                            tools like screen readers.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-h2">More Information</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-tip bottom-table-row"><a
+                                href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements">MDN's
+                                Semantic Elements Documentation</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
 </body>
 
 </html>
